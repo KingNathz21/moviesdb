@@ -11,7 +11,7 @@
 const categories = [
   "Action", "Adventure", "Animation", "Comedy", "Crime", "Documentary", "Drama", "Family", "Fantasy", "Horror", "Mystery", "Romance", "Sci-Fi", "Thriller", "War", "Western",
   "Superhero", "Marvel", "DC", "Star Wars", "Star Trek", "Disney", "Pixar", "DreamWorks", "Harry Potter", "James Bond", "Mission: Impossible", "Fast & Furious", "Jurassic Park", "Transformers",
-  "The Lord of the Rings", "The Hobbit", "John Wick", "Rocky / Creed", "Alien", "Predator", "Planet of the Apes", "MonsterVerse", "Musicals", "Christmas", "British", "TV Movies", "Classics", "Kids", "Family Favourites", "USB"
+  "The Lord of the Rings", "The Hobbit", "John Wick", "Rocky / Creed", "Alien", "Predator", "Planet of the Apes", "MonsterVerse", "Musicals", "Christmas", "British", "TV Movies", "Classics", "Kids", "Family Favourites"
 ];
 
 /* COPY THIS TEMPLATE FOR EVERY NEW MOVIE
@@ -48,7 +48,7 @@ const movies = [
     originalTitle: "Batman Begins",
     year: 2005,
     releaseDate: "2005-06-17",
-    categories: ["USB", "DC", "Superhero", "Action", "Crime", "Drama"],
+    categories: ["DC", "Superhero", "Action", "Crime", "Drama"],
     genres: ["Action", "Crime", "Drama", "Superhero"],
     status: "watched",
     runtime: "2h 20m",
@@ -67,7 +67,32 @@ const movies = [
     backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU8ZGJhAB7jIQB5RRssW_ORtezERoXKm5XM7yQQ7V55Z4eDzIKU3vWNLE&s=10",
     trailer: "https://www.youtube.com/watch?v=neY2xVmOfUM",
     notes: ""
-  }
+  },
+    {
+    title: "Spiderman - Brand New Day",
+    originalTitle: "Spiderman - Brand New Day",
+    year: 2026,
+    releaseDate: "2026-07-29",
+    categories: ["Marvel", "Superhero", "Action", "Crime", "Drama"],
+    genres: ["Action", "Crime", "Drama", "Superhero"],
+    status: "watched",
+    runtime: "2h 25m",
+    ageRating: "12A",
+    rating: "8.0/10",
+    director: "Destin Daniel Cretton",
+    studio: "Columbia Pictures",
+    language: "English",
+    country: "United States",
+    franchise: "Tom Holland Spiderman",
+    collection: "Spiderman",
+    location: "USB 01",
+    description: "After witnessing his parents' murder, Bruce Wayne travels the world and returns to Gotham determined to fight crime. He trains with the League of Shadows before becoming the masked vigilante known as Batman.",
+    cast: ["Christian Bale", "Michael Caine", "Liam Neeson", "Gary Oldman", "Morgan Freeman"],
+    cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3u3vTt_hAPPROUvh9Ob4mgb0reV-m_qDrXm1-3xLmQs4WbKtLytGTRtj_yBZP8HoKXXYEpg&s=10",
+    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU8ZGJhAB7jIQB5RRssW_ORtezERoXKm5XM7yQQ7V55Z4eDzIKU3vWNLE&s=10",
+    trailer: "https://www.youtube.com/watch?v=neY2xVmOfUM",
+    notes: ""
+  },
 ];
 
 const carouselSlides = [
