@@ -26,8 +26,13 @@ const categories = [
 
 // Add your movies here.
 const movies = [
-  // Example:
-  // { title: "Batman Begins", year: 2005, category: "DC", cover: "https://...", status: "watched" },
+  {
+    title: "Batman Begins",
+    year: 2005,
+    category: "DC",
+    cover: "https://image.tmdb.org/t/p/w500/4MpN4k2c1d1QY4XvQ7X3G4pX6XJ.jpg",
+    status: "watched"
+  }
 ];
 
 // Bottom carousel — completely editable.
