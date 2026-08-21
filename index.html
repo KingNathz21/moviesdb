@@ -13,57 +13,38 @@
 <body>
   <header class="topbar">
     <a class="brand" href="#home" aria-label="MoviesDB home"><span class="brand-mark">M</span><span>Movies<span>DB</span></span></a>
-    <nav class="nav" aria-label="Main navigation">
-      <a class="active" href="#home">Home</a>
-      <a href="#library">Library</a>
-      <a href="#categories">Categories</a>
-    </nav>
+    <nav class="nav" aria-label="Main navigation"><a class="active" href="#home">Home</a><a href="#library">Library</a><a href="#categories">Categories</a></nav>
     <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle theme">☾</button>
   </header>
 
   <main id="home">
     <section class="hero">
-      <div>
-        <p class="eyebrow">YOUR PERSONAL MOVIE DATABASE</p>
-        <h1>Keep your movies<br><span>in one place.</span></h1>
-        <p class="hero-copy">A clean, cover-first collection for everything you own, want to watch, or want to keep track of.</p>
-        <a class="primary-btn" href="#library">Browse library <span>→</span></a>
-      </div>
+      <div><p class="eyebrow">YOUR PERSONAL MOVIE DATABASE</p><h1>Keep your movies<br><span>in one place.</span></h1><p class="hero-copy">A clean, cover-first collection for everything you own, want to watch, or want to keep track of.</p><a class="primary-btn" href="#library">Browse library <span>→</span></a></div>
       <div class="hero-orbit" aria-hidden="true"><div class="orbit orbit-1"></div><div class="orbit orbit-2"></div><div class="orbit-card">MOVIES<br><strong>DB</strong></div></div>
     </section>
 
-    <section class="stats" aria-label="Library statistics">
-      <div><strong id="movieCount">0</strong><span>Movies</span></div>
-      <div><strong id="categoryCount">0</strong><span>Categories</span></div>
-      <div><strong id="watchCount">0</strong><span>To watch</span></div>
-    </section>
+    <section class="stats" aria-label="Library statistics"><div><strong id="movieCount">0</strong><span>Movies</span></div><div><strong id="categoryCount">0</strong><span>Categories</span></div><div><strong id="watchCount">0</strong><span>To watch</span></div></section>
 
     <section id="library" class="library section">
-      <div class="section-heading">
-        <div><p class="eyebrow">COLLECTION</p><h2>Your library</h2></div>
-        <div class="controls">
-          <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search movies..."></label>
-          <select id="sort" aria-label="Sort movies"><option value="az">A–Z</option><option value="za">Z–A</option><option value="year-new">Newest</option><option value="year-old">Oldest</option></select>
-        </div>
-      </div>
-      <div id="categoryTabs" class="category-tabs"></div>
-      <div id="movieGrid" class="movie-grid"></div>
-      <div id="emptyState" class="empty" hidden><div>🎬</div><h3>No movies found</h3><p>Try another search or category.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">COLLECTION</p><h2>Your library</h2></div><div class="controls"><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search movies..."></label><select id="sort" aria-label="Sort movies"><option value="az">A–Z</option><option value="za">Z–A</option><option value="year-new">Newest</option><option value="year-old">Oldest</option></select></div></div>
+      <div id="categoryTabs" class="category-tabs"></div><div id="movieGrid" class="movie-grid"></div><div id="emptyState" class="empty" hidden><div>🎬</div><h3>No movies found</h3><p>Try another search or category.</p></div>
     </section>
 
-    <section id="categories" class="section categories-section">
-      <div class="section-heading"><div><p class="eyebrow">BROWSE</p><h2>Categories</h2></div></div>
-      <div id="categoryCards" class="category-cards"></div>
-    </section>
+    <section id="categories" class="section categories-section"><div class="section-heading"><div><p class="eyebrow">BROWSE</p><h2>Categories</h2></div></div><div id="categoryCards" class="category-cards"></div></section>
 
-    <section class="spotlight section">
-      <div class="spotlight-copy"><p class="eyebrow">SPOTLIGHT</p><h2 id="spotlightTitle">Featured</h2><p id="spotlightText">Add your own featured slides in <code>movies-data.js</code>.</p><div class="carousel-dots" id="carouselDots"></div></div>
-      <div class="carousel-window"><div id="carouselTrack" class="carousel-track"></div></div>
-    </section>
+    <section class="spotlight section"><div class="spotlight-copy"><p class="eyebrow">SPOTLIGHT</p><h2 id="spotlightTitle">Featured</h2><p id="spotlightText">Add your own featured slides in <code>movies-data.js</code>.</p><div class="carousel-dots" id="carouselDots"></div></div><div class="carousel-window"><div id="carouselTrack" class="carousel-track"></div></div></section>
   </main>
 
+  <div id="movieModal" class="movie-modal" hidden aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="movie-detail">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">×</button>
+      <div class="detail-hero"><img id="detailBackdrop" src="" alt=""><div class="detail-hero-overlay"><span id="detailCategory" class="detail-category"></span><h2 id="detailTitle"></h2><p id="detailMeta"></p></div></div>
+      <div class="detail-body"><div class="detail-poster-wrap"><img id="detailCover" src="" alt="Movie cover"></div><div class="detail-main"><p id="detailDescription" class="detail-description"></p><div id="detailGenres" class="genre-list"></div><div id="detailFacts" class="detail-facts"></div><div class="detail-section"><h3>Cast</h3><p id="detailCast"></p></div><div class="detail-section" id="detailNotesWrap"><h3>Notes</h3><p id="detailNotes"></p></div></div></div>
+    </article>
+  </div>
+
   <footer><span>MoviesDB</span><span>Personal movie collection</span></footer>
-  <script src="movies-data.js"></script>
-  <script src="app.js"></script>
+  <script src="movies-data.js"></script><script src="app.js"></script>
 </body>
 </html>
