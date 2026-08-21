@@ -1,8 +1,10 @@
 /* MOVIESDB MOVIE TEMPLATE
- * Fill in every field for each movie. `category` is your collection/storage category
- * (including USB), while `genres` contains the actual film genres.
+ * Fill in every field for each movie.
+ * `genres` contains the actual film genres.
+ * `categories` contains one or more collection categories/tags such as USB, Marvel, DC, Christmas, etc.
+ * A movie can have as many categories as you need.
  *
- * Required fields: title, year, category, genres, description, cover.
+ * Required fields: title, year, categories, genres, description, cover.
  * Optional fields can be left blank.
  */
 
@@ -18,10 +20,9 @@ const categories = [
   originalTitle: "",
   year: 2026,
   releaseDate: "2026-01-01",
-  category: "USB",                 // Your collection/storage category
-  genres: ["Action", "Sci-Fi"],   // Actual movie genres
+  categories: ["USB", "Marvel"], // Add as many categories as you want
+  genres: ["Action", "Sci-Fi"],    // Actual movie genres
   status: "watch",                 // "watch" or "watched"
-  format: "USB",                   // USB, Blu-ray, DVD, Digital, etc.
   runtime: "2h 15m",
   ageRating: "15",
   rating: "8.0/10",
@@ -47,10 +48,9 @@ const movies = [
     originalTitle: "Batman Begins",
     year: 2005,
     releaseDate: "2005-06-17",
-    category: "USB",
+    categories: ["USB", "DC", "Superhero", "Action", "Crime", "Drama"],
     genres: ["Action", "Crime", "Drama", "Superhero"],
     status: "watched",
-    format: "USB",
     runtime: "2h 20m",
     ageRating: "12A",
     rating: "8.2/10",
