@@ -63,15 +63,17 @@ const movies = [
     location: "USB 01",
     description: "After witnessing his parents' murder, Bruce Wayne travels the world and returns to Gotham determined to fight crime. He trains with the League of Shadows before becoming the masked vigilante known as Batman.",
     cast: ["Christian Bale", "Michael Caine", "Liam Neeson", "Gary Oldman", "Morgan Freeman"],
-    cover: "https://image.tmdb.org/t/p/w500/1P5E4D7f3fQq8LqXwV4J6y7g8H9.jpg",
-    backdrop: "https://image.tmdb.org/t/p/w1280/2a1kY1K4z3V4J7g8H9Q0P1R2S3T.jpg",
-    trailer: "",
-    notes: "Tester movie — replace or remove when adding your own collection."
+    cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3u3vTt_hAPPROUvh9Ob4mgb0reV-m_qDrXm1-3xLmQs4WbKtLytGTRtj_yBZP8HoKXXYEpg&s=10",
+    backdrop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU8ZGJhAB7jIQB5RRssW_ORtezERoXKm5XM7yQQ7V55Z4eDzIKU3vWNLE&s=10",
+    trailer: "https://www.youtube.com/watch?v=neY2xVmOfUM",
+    notes: ""
   }
 ];
 
 const carouselSlides = [
-  { title: "Your next movie night", text: "Change this title and text to anything you want. You can also change the image.", image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80" },
-  { title: "Build your collection", text: "Add your favourite movies, franchises and physical collections to MoviesDB.", image: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=1200&q=80" },
-  { title: "USB collection", text: "Keep USB movies separate with the built-in USB category.", image: "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=1200&q=80" }
+  { title: "Old Blue USB", text: "Change this title and text to anything you want. You can also change the image.", image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80" },
+  { title: "Blue USB", text: "Add your favourite movies, franchises and physical collections to MoviesDB.", image: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=1200&q=80" },
+  { title: "Red USB", text: "Keep USB movies separate with the built-in USB category.", image: "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=1200&q=80" },
+  { title: "Black USB", text: "Keep USB movies separate with the built-in USB category.", image: "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=1200&q=80" },
+  { title: "Old Black USB", text: "Keep USB movies separate with the built-in USB category.", image: "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=1200&q=80" }
 ];
