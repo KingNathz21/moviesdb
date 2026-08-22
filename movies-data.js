@@ -1,9 +1,9 @@
-/* AM MOVIES DATABASE
+/* N&M MOVIES DATABASE
  *
  * Movies and series use the same flexible category system.
  * `genres` = what the title is.
  * `categories` = how you organise it. Add as many as you want.
- * Example: categories: ["USB", "Marvel", "Superhero", "Action"]
+ * `usbType` = optional physical USB collection: Old Blue USB, Blue USB, Black USB, Old Black USB or Red USB.
  *
  * For a movie, add it to `movies`.
  * For a series, add it to `series`.
@@ -15,6 +15,8 @@ const categories = [
   "The Lord of the Rings", "The Hobbit", "John Wick", "Rocky / Creed", "Alien", "Predator", "Planet of the Apes", "MonsterVerse", "Musicals", "Christmas", "British", "TV Movies", "Classics", "Kids", "Family Favourites", "USB"
 ];
 
+const usbTypes = ["Old Blue USB", "Blue USB", "Black USB", "Old Black USB", "Red USB"];
+
 /* MOVIE TEMPLATE — copy this object into `movies`
 {
   title: "Movie Title",
@@ -22,6 +24,7 @@ const categories = [
   year: 2026,
   releaseDate: "2026-01-01",
   categories: ["USB", "Marvel"],
+  usbType: "Blue USB", // Old Blue USB | Blue USB | Black USB | Old Black USB | Red USB
   genres: ["Action", "Sci-Fi"],
   status: "watch", // "watch" or "watched"
   runtime: "2h 15m",
@@ -48,6 +51,7 @@ SERIES TEMPLATE — copy this object into `series`
   year: 2026,
   releaseDate: "2026-01-01",
   categories: ["USB", "Drama"],
+  usbType: "Red USB",
   genres: ["Drama", "Thriller"],
   status: "watch",
   seasons: 3,
@@ -77,6 +81,7 @@ const movies = [
     year: 2005,
     releaseDate: "2005-06-17",
     categories: ["DC", "Superhero", "Action", "Crime", "Drama", "USB"],
+    usbType: "Old Blue USB",
     genres: ["Action", "Crime", "Drama", "Superhero"],
     status: "watched",
     runtime: "2h 20m",
@@ -100,7 +105,8 @@ const movies = [
     originalTitle: "Spiderman - Brand New Day",
     year: 2026,
     releaseDate: "2026-07-29",
-    categories: ["Marvel", "Superhero", "Action", "Crime", "Drama"],
+    categories: ["Marvel", "Superhero", "Action", "Crime", "Drama", "USB"],
+    usbType: "Blue USB",
     genres: ["Action", "Crime", "Drama", "Superhero"],
     status: "watched",
     runtime: "2h 25m",
@@ -126,9 +132,9 @@ const series = [
 ];
 
 const carouselSlides = [
-  { title: "Old Blue USB", text: "Old Blue USB with Black resedue on it.", image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80" },
-  { title: "Blue USB", text: "Add your favourite movies, franchises and physical collections to AM Movies.", image: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=1200&q=80" },
-  { title: "Red USB", text: "Keep USB titles organised with the built-in category system.", image: "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=1200&q=80" },
-  { title: "Black USB", text: "Add your own title, description and image for every carousel slide.", image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80" },
-  { title: "Old Black USB", text: "The carousel moves automatically and can contain as many slides as you like.", image: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=1200&q=80" }
+  { title: "Old Blue USB", text: "Old Blue USB collection.", image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80" },
+  { title: "Blue USB", text: "Blue USB collection.", image: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=1200&q=80" },
+  { title: "Red USB", text: "Red USB collection.", image: "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=1200&q=80" },
+  { title: "Black USB", text: "Black USB collection.", image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=80" },
+  { title: "Old Black USB", text: "Old Black USB collection.", image: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=1200&q=80" }
 ];
